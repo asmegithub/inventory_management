@@ -85,18 +85,29 @@ WSGI_APPLICATION = 'InventoryManagement.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "inventory_db",
+#         "USER": "asme",
+#         "PASSWORD": "your_new_password",
+#         "HOST": "127.0.0.1",
+#         "PORT": "5432",
+#     }
+
+# }inventory_db
+# this is configration for mysql database
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
+        "ENGINE": "django.db.backends.mysql",
         "NAME": "inventory_db",
-        "USER": "asme",
-        "PASSWORD": "your_new_password",
+        "USER": "root",
+        "PASSWORD": "mysql-2123",
         "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "PORT": "3306",
     }
 
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
