@@ -120,7 +120,7 @@ WSGI_APPLICATION = 'InventoryManagement.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "mydatabase",
+        "NAME": BASE_DIR / "db_sqlite3",
     }
 }
 # Update database configuration from $DATABASE_URL environment variable (if defined)
