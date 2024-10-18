@@ -96,18 +96,24 @@ WSGI_APPLICATION = 'InventoryManagement.wsgi.application'
 
 # }inventory_db
 # this is configration for mysql database
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "inventory_db",
+#         "USER": "root",
+#         "PASSWORD": "mysql-2123",
+#         "HOST": "127.0.0.1",
+#         "PORT": "3306",
+#     }
+
+# }
+# sqlite config
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "inventory_db",
-        "USER": "root",
-        "PASSWORD": "mysql-2123",
-        "HOST": "127.0.0.1",
-        "PORT": "3306",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
     }
-
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
